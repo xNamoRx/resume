@@ -10,6 +10,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+.sidebar {
+  background: #e0ebfe;
+}
 .main-content {
   padding-left: 88px;
   padding-top: 80px;
