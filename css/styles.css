@@ -2,8 +2,7 @@ body {
   background: #f6f6fa;
   padding: 40px 40px 40px 40px;
   font-family: "Montserrat", serif;
-  width: 1280px;
-  height: 1399px;
+  
 }
 .wrapper {
   background: #fff;
@@ -18,5 +17,7 @@ body {
   padding-top: 80px;
   padding-right: 40px;
   padding-bottom: 80px;
-  box-sizing: border-box;
 }
+.contacts {
+}
+
