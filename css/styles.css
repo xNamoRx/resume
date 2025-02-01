@@ -145,8 +145,7 @@ body {
 
 /* My project */
 .projects {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 40px;
 }
 
 .project-title {
@@ -169,8 +168,7 @@ body {
 /* Work */
 
 .work {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .work-experience {
@@ -217,4 +215,33 @@ body {
   line-height: 171%;
   color: #595959;
   padding-left: 20px;
+}
+
+/* Education */
+.education-container {
+  padding-top: 40px;
+}
+
+.education-title {
+font-weight: 700;
+font-size: 22px;
+color: #000;
+margin-top: 0;
+margin-bottom: 8px;
+}
+
+.education-name {
+font-weight: 700;
+font-size: 16px;
+color: #6d9bf5;
+margin-bottom: 8px;
+margin-top: 8px;
+}
+
+.education-spec {
+font-weight: 700;
+font-size: 14px;
+color: #000;
+margin-bottom: 8px;
+margin-top: 8px;
 }
