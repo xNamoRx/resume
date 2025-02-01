@@ -115,3 +115,106 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
 }
+/* Position */
+
+.position {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 121%;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Name */
+.name {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 122%;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #595959;
+  margin: 0;
+}
+
+/* My project */
+.projects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 123%;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.projects-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000;
+  padding-left: 20px;
+}
+
+/* Work */
+
+.work {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.work-experience {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 123%;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.company {
+  padding-bottom: 12px;
+}
+.position {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.company-name {
+  color: #6d9bf5;
+}
+
+.time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #a8a8a8;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.color-line {
+  color: #000;
+}
+
+.company-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #595959;
+  padding-left: 20px;
+}
