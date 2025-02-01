@@ -104,8 +104,14 @@ body {
   padding-left: 22px;
 }
 .soft-list-item {
-font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-color: #161d2a;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #161d2a;
+}
+
+.page {
+  width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
