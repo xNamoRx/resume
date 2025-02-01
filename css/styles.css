@@ -2,23 +2,110 @@ body {
   background: #f6f6fa;
   padding: 40px 40px 40px 40px;
   font-family: "Montserrat", serif;
-  
 }
+
 .wrapper {
-  background: #fff;
+  background: #ffffff;
   display: flex;
   flex-direction: row-reverse;
 }
-.sidebar {
-  background: #e0ebfe;
-}
+
 .main-content {
   padding-left: 88px;
   padding-top: 80px;
   padding-right: 40px;
   padding-bottom: 80px;
-}
-.contacts {
-  padding-left: 40px; 
+  box-sizing: border-box;
 }
 
+.sidebar {
+  background: #e0ebfe;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  width: 370px;
+}
+.sidebar-content {
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #161d2a;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+/* Контакти */
+.contacts-type {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+  margin-right: 8px;
+}
+
+.contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161d2a;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2979ff;
+}
+
+.contacts-item {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.contacts-container {
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  margin-bottom: 40px;
+}
+/* Tech skills */
+.skills-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #161d2a;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.skills-list {
+  padding-left: 22px;
+}
+
+.skills-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #161d2a;
+}
+/* Soft skills */
+.soft-container {
+  margin-bottom: 40px;
+}
+.soft-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #161d2a;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.soft-list {
+  padding-left: 22px;
+}
+.soft-list-item {
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+color: #161d2a;
+}
