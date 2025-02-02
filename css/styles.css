@@ -89,26 +89,6 @@ body {
   line-height: 171%;
   color: #161d2a;
 }
-/* Soft skills */
-.soft-container {
-  margin-bottom: 40px;
-}
-.soft-title {
-  font-weight: 700;
-  font-size: 22px;
-  color: #161d2a;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-.soft-list {
-  padding-left: 22px;
-}
-.soft-list-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  color: #161d2a;
-}
 
 .page {
   width: 1280px;
