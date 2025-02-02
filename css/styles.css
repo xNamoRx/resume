@@ -4,10 +4,18 @@ body {
   font-family: "Montserrat", serif;
 }
 
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   background: #ffffff;
   display: flex;
   flex-direction: row-reverse;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .main-content {
@@ -90,11 +98,6 @@ body {
   color: #161d2a;
 }
 
-.page {
-  width: 1280px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
 /* Position */
 
 .position {
@@ -115,17 +118,22 @@ body {
   margin-top: 0;
   margin-bottom: 12px;
 }
+
 .info {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   color: #595959;
-  margin: 0;
+}
+
+.my-info {
+  margin-bottom: 40px;
 }
 
 /* My project */
+
 .projects {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .project-title {
@@ -138,11 +146,7 @@ body {
 }
 
 .projects-list {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 171%;
-  color: #000;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 
 .name-project {
@@ -152,6 +156,13 @@ body {
   color: #595959;
 }
 
+.projects-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000;
+}
+
 .project-link {
   font-weight: 400;
   font-size: 14px;
@@ -159,17 +170,6 @@ body {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #005fff;
-}
-
-.line {
-  stroke-width: 1px;
-  stroke: #a8a8a8;
-}
-
-/* Work */
-
-.work {
-  padding-top: 40px;
 }
 
 .work-experience {
@@ -182,15 +182,15 @@ body {
 }
 
 .company {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
-.position {
+.company-position {
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
   color: #000;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .company-name {
@@ -202,8 +202,7 @@ body {
   font-size: 12px;
   line-height: 125%;
   color: #a8a8a8;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .color-line {
@@ -211,11 +210,14 @@ body {
 }
 
 .company-list {
+  padding-left: 24px;
+}
+
+.company-duties-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   color: #595959;
-  padding-left: 20px;
 }
 
 /* Education */
