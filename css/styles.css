@@ -2,6 +2,9 @@ body {
   background: #f6f6fa;
   padding: 40px 40px 40px 40px;
   font-family: "Montserrat", serif;
+  background-image: url("../img/pakata-goh-EJMTKCZ00I0-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ul,
@@ -16,6 +19,8 @@ ol {
   flex-direction: row-reverse;
   width: 1280px;
   margin: 0 auto;
+  border-radius: 40px;
+  box-shadow: 8px 68px 174px 100px rgba(3, 0, 100, 0.65);
 }
 
 .main-content {
@@ -32,6 +37,8 @@ ol {
   padding-bottom: 40px;
   box-sizing: border-box;
   width: 370px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 .sidebar-content {
   padding-left: 40px;
@@ -172,6 +179,12 @@ ol {
   color: #005fff;
 }
 
+/* Work exp */
+
+.work {
+  margin-bottom: 40px;
+}
+
 .work-experience {
   font-weight: 700;
   font-size: 22px;
@@ -222,7 +235,7 @@ ol {
 
 /* Education */
 .education-container {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .education-title {
@@ -251,7 +264,7 @@ ol {
 
 /* Certification */
 .certification-container {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .certification-title {
