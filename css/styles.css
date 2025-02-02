@@ -223,25 +223,54 @@ body {
 }
 
 .education-title {
-font-weight: 700;
-font-size: 22px;
-color: #000;
-margin-top: 0;
-margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .education-name {
-font-weight: 700;
-font-size: 16px;
-color: #6d9bf5;
-margin-bottom: 8px;
-margin-top: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6d9bf5;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .education-spec {
-font-weight: 700;
-font-size: 14px;
-color: #000;
-margin-bottom: 8px;
-margin-top: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* Certification */
+.certification-container {
+  padding-top: 40px;
+}
+
+.certification-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.certification-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6d9bf5;
+  margin-bottom: 8px;
+  margin-top: 8px; 
+}
+
+.certification-spec {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
