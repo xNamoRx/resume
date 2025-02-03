@@ -8,6 +8,19 @@ body {
   background-attachment: fixed;
 }
 
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/pakata-goh-EJMTKCZ00I0-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(10px);
+  z-index: -1;
+} */
 
 ul,
 ol {
@@ -175,7 +188,7 @@ ol {
 .project-link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 24px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #005fff;
