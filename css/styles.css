@@ -1,4 +1,3 @@
-
 body {
   background: #f6f6fa;
   padding: 40px 40px 40px 40px;
@@ -75,22 +74,24 @@ ol {
   font-size: 14px;
   line-height: 24px;
   color: #161d2a;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #161d2a;
+  color: #2979ff;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #2979ff;
 }
 
 .contacts-item {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .contacts-container {
@@ -304,4 +305,167 @@ ol {
   color: #000;
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+/* Header */
+.header {
+  width: 1200px;
+  background: #ffffff;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 auto 32px auto;
+  border-radius: 40px; /* Заокруглення всіх кутів */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 18px 40px 10px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  border-radius: 40px;
+  background: inherit;
+  box-sizing: border-box;
+}
+
+.header-content {
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.header-nav {
+  margin-top: 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-link {
+  color: #2979ff;
+  background: #f3f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 12px;
+  border: 1.5px solid #e0ebfe;
+  box-shadow: 0 2px 8px rgba(41, 121, 255, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s,
+    transform 0.1s;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  background: #2979ff;
+  color: #fff;
+  border-color: #2979ff;
+  box-shadow: 0 4px 16px rgba(41, 121, 255, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Footer */
+.footer {
+  width: 1200px;
+  background: #f7faff;
+  color: #161d2a;
+  padding: 18px 0;
+  margin: 40px auto 0 auto;
+  box-shadow: none;
+  border-radius: 40px; /* Заокруглення всіх кутів */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-item {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contacts-type {
+  font-weight: 700;
+  font-size: 14px;
+  color: #161d2a;
+  margin-right: 4px;
+}
+
+.contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2979ff;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+/* Profile photo */
+.profile-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px; /* квадрат з легким заокругленням */
+  margin: 0 auto 32px auto;
+  box-shadow: 0 4px 24px rgba(41, 121, 255, 0.15);
+}
+
+/* Плавний скрол */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Підсвітка блоку при скролі */
+.section-highlight {
+  animation: highlight-section 1.2s;
+}
+
+@keyframes highlight-section {
+  0% {
+    box-shadow: 0 0 0 0 #2979ff66;
+    background: #e3f0ff;
+  }
+  60% {
+    box-shadow: 0 0 0 8px #2979ff33;
+    background: #e3f0ff;
+  }
+  100% {
+    box-shadow: none;
+    background: transparent;
+  }
 }
