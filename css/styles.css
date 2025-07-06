@@ -318,6 +318,16 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: opacity 0.3s, background 0.3s;
+}
+
+.header.scrolled {
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.7); /* напівпрозорий фон, а не opacity! */
+  transition: opacity 0.3s, background 0.3s;
 }
 
 .header-content {
@@ -363,15 +373,22 @@ ol {
   display: inline-block;
   cursor: pointer;
   letter-spacing: 0.02em;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header.scrolled .header-link:hover,
+.header.scrolled .header-link:focus {
   background: #2979ff;
   color: #fff;
-  border-color: #2979ff;
-  box-shadow: 0 4px 16px rgba(41, 121, 255, 0.18);
-  transform: translateY(-2px) scale(1.04);
+  opacity: 1 !important;
+}
+
+.header.scrolled .header-link {
+  background: #f3f7ff;
 }
 
 /* Footer */
