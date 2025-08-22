@@ -486,3 +486,89 @@ html {
     background: transparent;
   }
 }
+
+/* Work section adjustments */
+.company-position {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spacing between position and company name */
+  cursor: pointer;
+}
+
+/* Work section collapsible adjustments */
+.company-list {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.company-list.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.company-position {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spacing between position and company name */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.company-position:hover {
+  transform: translateX(5px);
+}
+
+.company-position .toggle-btn {
+  position: relative;
+  padding-left: 10px;
+}
+
+.company-position .toggle-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.company-position:hover .toggle-btn::before {
+  opacity: 0.4;
+}
+
+.company-position + .time {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  color: #555;
+}
+.button {
+  color: #2979ff;
+  background: #f3f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 12px;
+  border: 1.5px solid #e0ebfe;
+  box-shadow: 0 2px 8px rgba(41, 121, 255, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s,
+    transform 0.1s;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.button:hover {
+  background: #2979ff;
+  color: #fff;
+  opacity: 1 !important;
+}

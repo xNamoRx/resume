@@ -36,6 +36,12 @@
           <h2 class="position">Manual QA Engineer</h2>
 
           <h1 class="name">Roman Rusnak</h1>
+          <div class="contact-buttons">
+            <a class="button" href="https://github.com/xNamoRx" target="_blank">GitHub</a>
+            <button class="button" id="send-mail-button">Send Mail</button>
+            <a class="button" href="https://www.linkedin.com/in/xnamorx/" target="_blank">LinkedIn</a>
+            <a class="button" href="https://t.me/xNamoRx" target="_blank">Telegram</a>
+          </div>
 
           <p class="info">
             <b>QA Engineer with 3+ years of experience</b> in web and mobile
@@ -147,9 +153,7 @@
                         stroke-dasharray="4 4"
                       />
                     </svg>
-                    <span class="name-project"
-                      >[ Time tracking ]</span
-                    >
+                    <span class="name-project">[ Time tracking ]</span>
                   </li>
                   <li class="projects-item">
                     <a
@@ -304,13 +308,13 @@
           <!-- Company 0 -->
           <div class="company">
             <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Appricotsoft</span>
+              Manual QA Engineer <span class="company-name"> Appricotsoft</span>
             </h4>
             <p class="time">
               February 2025 - up to now <span class="color-line">|</span> Poland
               <span class="color-line">|</span> Full-time
             </p>
-            <ul class="company-list">
+            <ul class="company-list collapsed">
               <li class="company-duties-item">
                 Perform manual testing of client websites and mobile
                 applications to ensure compliance with requirements, design, and
@@ -342,13 +346,14 @@
           <!-- Company 1 -->
           <div class="company">
             <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Forward Group</span>
+              Manual QA Engineer
+              <span class="company-name"> Forward Group</span>
             </h4>
             <p class="time">
               May 2024 - February 2025 <span class="color-line">|</span> Ukraine
               <span class="color-line">|</span> Part-time
             </p>
-            <ul class="company-list">
+            <ul class="company-list collapsed">
               <li class="company-duties-item">
                 Testing of web software for 3 projects (Cargofy, Fr8lines, and
                 CRM Cargohub)
@@ -372,14 +377,14 @@
           <!-- Company 2 -->
           <div class="company">
             <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Getmancar</span>
+              Manual QA Engineer <span class="company-name"> Getmancar</span>
             </h4>
             <p class="time">
               February 2024 - February 2025
               <span class="color-line">|</span> Ukraine
               <span class="color-line">|</span> Part-time
             </p>
-            <ul class="company-list">
+            <ul class="company-list collapsed">
               <li class="company-duties-item">WEB Software testing</li>
               <li class="company-duties-item">
                 Mobile application testing (Android and iOS)
@@ -390,7 +395,8 @@
           <!-- Comnpany 3 -->
           <div class="company">
             <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Forward Group</span>
+              Manual QA Engineer
+              <span class="company-name"> Forward Group</span>
             </h4>
             <p class="time">
               June 2021 - November 2023
@@ -556,59 +562,8 @@
     <footer class="footer">
       <div class="footer-content" id="contacts">
         <span>© 2025 Roman Rusnak</span>
-        <div class="footer-contacts">
-          <span class="contacts-item">
-            <span class="contacts-type">Phone:</span>
-            <a class="contacts-link" href="tel:+380990278087"
-              >+38 099 027 80 87</a
-            >
-          </span>
-          <span class="contacts-item">
-            <span class="contacts-type">Email:</span>
-            <a class="contacts-link" href="mailto:rrusnak09@gmail.com"
-              >rrusnak09@gmail.com</a
-            >
-          </span>
-          <span class="contacts-item">
-            <span class="contacts-type">LinkedIn:</span>
-            <a class="contacts-link" href="https://www.linkedin.com/in/xnamorx/"
-              >linkedin.com/in/xnamorx</a
-            >
-          </span>
-        </div>
       </div>
     </footer>
-    <script>
-      document.querySelectorAll(".header-link").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (href && href.startsWith("#")) {
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              // Скролимо блок по центру вікна
-              target.scrollIntoView({ behavior: "smooth", block: "center" });
-              // Додаємо підсвітку на довший час
-              target.classList.add("section-highlight");
-              setTimeout(
-                () => target.classList.remove("section-highlight"),
-                5000
-              ); // 2 секунди
-            }
-          }
-        });
-      });
-    </script>
-    <script>
-      const header = document.querySelector(".header");
-      let lastScroll = 0;
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 10) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
