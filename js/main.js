@@ -1,3 +1,4 @@
+// Smooth scroll + section highlight on nav click
 document.querySelectorAll(".header-link").forEach((link) => {
   link.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
@@ -7,15 +8,16 @@ document.querySelectorAll(".header-link").forEach((link) => {
         e.preventDefault();
         target.scrollIntoView({ behavior: "smooth", block: "center" });
         target.classList.add("section-highlight");
-        setTimeout(() => target.classList.remove("section-highlight"), 5000);
+        setTimeout(() => target.classList.remove("section-highlight"), 1500);
       }
     }
   });
 });
 
+// Work experience accordion
 document.addEventListener("DOMContentLoaded", () => {
   const companies = document.querySelectorAll(".work .company");
-  companies.forEach((company, index) => {
+  companies.forEach((company) => {
     const title = company.querySelector(".company-position");
     const list = company.querySelector(".company-list");
     if (!title || !list) return;
@@ -32,31 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.createElement("span");
     btn.classList.add("toggle-btn");
     btn.style.cursor = "pointer";
-    btn.style.marginRight = "8px";
-    btn.style.fontWeight = "bold";
-    btn.style.fontSize = "1.1em";
-    btn.textContent = index === 0 ? "−" : "+";
+    btn.textContent = list.classList.contains("collapsed") ? "+" : "−";
 
     if (jobTitleText) {
       jobTitleWrapper.appendChild(btn);
       jobTitleWrapper.appendChild(
-        document.createTextNode(
-          jobTitleText.textContent || jobTitleText.nodeValue || ""
-        )
+        document.createTextNode(jobTitleText.textContent || jobTitleText.nodeValue || "")
       );
       title.removeChild(jobTitleText);
       title.insertBefore(jobTitleWrapper, companyName);
     } else {
       title.insertBefore(btn, companyName);
-    }
-
-    // Ensure only the first is expanded, others collapsed, and set toggle button accordingly
-    if (index === 0) {
-      list.classList.remove("collapsed"); // first block expanded
-      btn.textContent = "−";
-    } else {
-      list.classList.add("collapsed"); // other blocks collapsed
-      btn.textContent = "+";
     }
 
     title.addEventListener("click", () => {
@@ -66,17 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Header glass effect on scroll
 const header = document.querySelector(".header");
-let lastScroll = 0;
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+  header.classList.toggle("scrolled", window.scrollY > 10);
 });
 
-// Functionality for "Send Mail" button
+// Interactive blob follows cursor
+const interactive = document.querySelector(".interactive");
+if (interactive) {
+  window.addEventListener("mousemove", (e) => {
+    const xPct = (e.clientX / window.innerWidth - 0.5) * 80;
+    const yPct = (e.clientY / window.innerHeight - 0.5) * 80;
+    interactive.style.transform = `translate(calc(-50% + ${xPct}vw), calc(-50% + ${yPct}vh))`;
+  });
+}
+
+// Send mail button
 const sendMailBtn = document.getElementById("send-mail-button");
 if (sendMailBtn) {
   sendMailBtn.addEventListener("click", () => {

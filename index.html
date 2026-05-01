@@ -13,22 +13,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="page">
-    <div class="text-container">Bubbles</div>
     <div class="gradient-bg">
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
-            />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
             <feBlend in="SourceGraphic" in2="goo" />
           </filter>
         </defs>
@@ -42,7 +32,7 @@
         <div class="interactive"></div>
       </div>
     </div>
-    <!-- Header -->
+
     <header class="header">
       <div class="header-content">
         <nav class="header-nav">
@@ -55,31 +45,18 @@
       </div>
     </header>
 
-    <!-- Wrapper -->
     <div class="wrapper">
-      <!-- Main content -->
       <div class="main-content">
-        <!-- My info -->
+
         <div class="my-info" id="about">
           <h2 class="position">Manual QA Engineer</h2>
-
           <h1 class="name">Roman Rusnak</h1>
           <div class="contact-buttons">
-            <a class="button" href="https://github.com/xNamoRx" target="_blank"
-              >GitHub</a
-            >
+            <a class="button" href="https://github.com/xNamoRx" target="_blank">GitHub</a>
             <button class="button" id="send-mail-button">Send Mail</button>
-            <a
-              class="button"
-              href="https://www.linkedin.com/in/xnamorx/"
-              target="_blank"
-              >LinkedIn</a
-            >
-            <a class="button" href="https://t.me/xNamoRx" target="_blank"
-              >Telegram</a
-            >
+            <a class="button" href="https://www.linkedin.com/in/xnamorx/" target="_blank">LinkedIn</a>
+            <a class="button" href="https://t.me/xNamoRx" target="_blank">Telegram</a>
           </div>
-
           <p class="info">
             <b>QA Engineer with 3+ years of experience</b> in web and mobile
             application testing. Strong understanding of software testing types,
@@ -92,458 +69,171 @@
             DevTools, Swagger, Fiddler, Jira, and Mantis.
           </p>
         </div>
-        <!-- My project -->
+
         <div class="projects" id="projects">
           <h3 class="project-title">Projects</h3>
-
           <ol class="projects-list">
             <li class="projects-item">
-              <div>
-                <a
-                  class="project-link"
-                  href="https://appricotsoft.com/"
-                  target="_blank"
-                  >Appricotsoft</a
-                >
-                <svg
-                  class="line"
-                  width="175"
-                  height="2"
-                  viewBox="0 0 155 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M154.13 1H0.198914"
-                    stroke="#A8A8A8"
-                    stroke-dasharray="4 4"
-                  />
-                </svg>
-                <span class="name-project">[ Software development group ]</span>
-                <ul class="subprojects-list">
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://myrest.io/"
-                      target="_blank"
-                      >MyRest</a
-                    >
-                    <svg
-                      class="line"
-                      width="209"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project"
-                      >[ Restaurant automation platform ]</span
-                    >
-                  </li>
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://questy.org.pl/"
-                      target="_blank"
-                      >Questy</a
-                    >
-                    <svg
-                      class="line"
-                      width="212"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Educational platform ]</span>
-                  </li>
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://app.samaypl.com/"
-                      target="_blank"
-                      >Samay</a
-                    >
-                    <svg
-                      class="line"
-                      width="213"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Time tracking ]</span>
-                  </li>
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://pandasmile.app/"
-                      target="_blank"
-                      >PandaSmile</a
-                    >
-                    <svg
-                      class="line"
-                      width="175"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Dental clinic software ]</span>
-                  </li>
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://tiptip.com.pl/"
-                      target="_blank"
-                      >TipTip</a
-                    >
-                    <svg
-                      class="line"
-                      width="218"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Tipping platform ]</span>
-                  </li>
-                </ul>
-              </div>
+              <a class="project-link" href="https://appricotsoft.com/" target="_blank">Appricotsoft</a>
+              <span class="name-project">[ Software development group ]</span>
+              <ul class="subprojects-list">
+                <li class="projects-item">
+                  <a class="project-link" href="https://myrest.io/" target="_blank">MyRest</a>
+                  <span class="name-project">[ Restaurant automation platform ]</span>
+                </li>
+                <li class="projects-item">
+                  <a class="project-link" href="https://questy.org.pl/" target="_blank">Questy</a>
+                  <span class="name-project">[ Educational platform ]</span>
+                </li>
+                <li class="projects-item">
+                  <a class="project-link" href="https://app.samaypl.com/" target="_blank">Samay</a>
+                  <span class="name-project">[ Time tracking ]</span>
+                </li>
+                <li class="projects-item">
+                  <a class="project-link" href="https://pandasmile.app/" target="_blank">PandaSmile</a>
+                  <span class="name-project">[ Dental clinic software ]</span>
+                </li>
+                <li class="projects-item">
+                  <a class="project-link" href="https://tiptip.com.pl/" target="_blank">TipTip</a>
+                  <span class="name-project">[ Tipping platform ]</span>
+                </li>
+              </ul>
             </li>
             <li class="projects-item">
-              <div>
-                <a
-                  class="project-link"
-                  href="https://forward.group/"
-                  target="_blank"
-                  >Forward Group</a
-                >
-                <svg
-                  class="line"
-                  width="154"
-                  height="2"
-                  viewBox="0 0 140 2"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M154.13 1H0.198914"
-                    stroke="#A8A8A8"
-                    stroke-dasharray="4 4"
-                  />
-                </svg>
-                <span class="name-project">[ CRM System ]</span>
-                <ul class="subprojects-list">
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://cargofy.com/"
-                      target="_blank"
-                      >Cargofy</a
-                    >
-                    <svg
-                      class="line"
-                      width="206"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Carrier cabinet ]</span>
-                  </li>
-                  <li class="projects-item">
-                    <a
-                      class="project-link"
-                      href="https://fr8lines.com/"
-                      target="_blank"
-                      >Fr8lines</a
-                    >
-                    <svg
-                      class="line"
-                      width="205"
-                      height="2"
-                      viewBox="0 0 155 2"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M154.13 1H0.198914"
-                        stroke="#A8A8A8"
-                        stroke-dasharray="4 4"
-                      />
-                    </svg>
-                    <span class="name-project">[ Shipper cabinet ]</span>
-                  </li>
-                </ul>
-              </div>
+              <a class="project-link" href="https://forward.group/" target="_blank">Forward Group</a>
+              <span class="name-project">[ CRM System ]</span>
+              <ul class="subprojects-list">
+                <li class="projects-item">
+                  <a class="project-link" href="https://cargofy.com/" target="_blank">Cargofy</a>
+                  <span class="name-project">[ Carrier cabinet ]</span>
+                </li>
+                <li class="projects-item">
+                  <a class="project-link" href="https://fr8lines.com/" target="_blank">Fr8lines</a>
+                  <span class="name-project">[ Shipper cabinet ]</span>
+                </li>
+              </ul>
             </li>
             <li class="projects-item">
-              <a
-                class="project-link"
-                href="https://getmancar.com.ua/"
-                target="_blank"
-                >Getmancar</a
-              >
-              <svg
-                class="line"
-                width="185"
-                height="2"
-                viewBox="0 0 155 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M154.13 1H0.198914"
-                  stroke="#A8A8A8"
-                  stroke-dasharray="4 4"
-                /></svg
-              ><span class="name-project">[ Carsharing service ]</span>
+              <a class="project-link" href="https://getmancar.com.ua/" target="_blank">Getmancar</a>
+              <span class="name-project">[ Carsharing service ]</span>
             </li>
           </ol>
         </div>
-        <!-- Work experiens -->
+
         <div class="work" id="work">
-          <h3 class="work-experience">Work experiens</h3>
+          <h3 class="work-experience">Work Experience</h3>
 
-          <!-- Company 0 -->
           <div class="company">
             <h4 class="company-position">
-              Manual QA Engineer <span class="company-name"> Appricotsoft</span>
+              Manual QA Engineer <span class="company-name">Appricotsoft</span>
             </h4>
             <p class="time">
-              February 2025 - up to now <span class="color-line">|</span> Poland
-              <span class="color-line">|</span> Full-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">
-                Perform manual testing of client websites and mobile
-                applications to ensure compliance with requirements, design, and
-                business logic
-              </li>
-              <li class="company-duties-item">
-                Use Postman for API testing (validating responses, error
-                handling, authentication, etc.)
-              </li>
-              <li class="company-duties-item">
-                Work with databases (SQL) to verify backend data consistency and
-                integrity
-              </li>
-              <li class="company-duties-item">
-                Contribute to multiple projects simultaneously, including the
-                company’s internal product — MyRest
-              </li>
-              <li class="company-duties-item">
-                Create test cases, checklists, and document bugs in tracking
-                systems (e.g., Jira)
-              </li>
-              <li class="company-duties-item">
-                Collaborate closely with developers and designers to ensure
-                product quality
-              </li>
-            </ul>
-          </div>
-
-          <!-- Company 1 -->
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer
-              <span class="company-name"> Forward Group</span>
-            </h4>
-            <p class="time">
-              May 2024 - February 2025 <span class="color-line">|</span> Ukraine
-              <span class="color-line">|</span> Part-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">
-                Testing of web software for 3 projects (Cargofy, Fr8lines, and
-                CRM Cargohub)
-              </li>
-              <li class="company-duties-item">
-                API (Postman) testing using collections
-              </li>
-              <li class="company-duties-item">
-                Bug reports writing (Jira, Notion)
-              </li>
-              <li class="company-duties-item">
-                Regression testing (smoke, complete regression, partial
-                regression)
-              </li>
-              <li class="company-duties-item">
-                Testing the Application on Multiple platforms (Opera, Chrome,
-                Mozilla, Safari, mobile browsers)
-              </li>
-            </ul>
-          </div>
-          <!-- Company 2 -->
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer <span class="company-name"> Getmancar</span>
-            </h4>
-            <p class="time">
-              February 2024 - February 2025
-              <span class="color-line">|</span> Ukraine
-              <span class="color-line">|</span> Part-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">WEB Software testing</li>
-              <li class="company-duties-item">
-                Mobile application testing (Android and iOS)
-              </li>
-              <li class="company-duties-item">Bug reports writing</li>
-            </ul>
-          </div>
-          <!-- Comnpany 3 -->
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer
-              <span class="company-name"> Forward Group</span>
-            </h4>
-            <p class="time">
-              June 2021 - November 2023
-              <span class="color-line">|</span> Ukraine
+              February 2025 — present <span class="color-line">|</span> Poland
               <span class="color-line">|</span> Full-time
             </p>
             <ul class="company-list">
-              <li class="company-duties-item">
-                Testing of web software for 3 projects (Cargofy, Fr8lines, and
-                CRM Cargohub)
-              </li>
-              <li class="company-duties-item">
-                API (Postman) testing using collections
-              </li>
-              <li class="company-duties-item">
-                Bug reports writing (Jira, Notion)
-              </li>
-              <li class="company-duties-item">
-                Regression testing (smoke, complete regression, partial
-                regression)
-              </li>
-              <li class="company-duties-item">
-                Testing the Application on Multiple platforms (Opera, Chrome,
-                Mozilla, Safari, mobile browsers)
-              </li>
-              <li class="company-duties-item">
-                Developing test plans and test cases, bug reports writing (Jira,
-                Notion)
-              </li>
-              <li class="company-duties-item">
-                Cargofy mobile application testing (Android and iOS)
-              </li>
-              <li class="company-duties-item">
-                Testing Database SQL, wrote simple queries
-              </li>
+              <li class="company-duties-item">Perform manual testing of client websites and mobile applications to ensure compliance with requirements, design, and business logic</li>
+              <li class="company-duties-item">Use Postman for API testing (validating responses, error handling, authentication, etc.)</li>
+              <li class="company-duties-item">Work with databases (SQL) to verify backend data consistency and integrity</li>
+              <li class="company-duties-item">Contribute to multiple projects simultaneously, including the company's internal product — MyRest</li>
+              <li class="company-duties-item">Create test cases, checklists, and document bugs in tracking systems (e.g., Jira)</li>
+              <li class="company-duties-item">Collaborate closely with developers and designers to ensure product quality</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h4 class="company-position">
+              Manual QA Engineer <span class="company-name">Forward Group</span>
+            </h4>
+            <p class="time">
+              May 2024 — February 2025 <span class="color-line">|</span> Ukraine
+              <span class="color-line">|</span> Part-time
+            </p>
+            <ul class="company-list collapsed">
+              <li class="company-duties-item">Testing of web software for 3 projects (Cargofy, Fr8lines, and CRM Cargohub)</li>
+              <li class="company-duties-item">API (Postman) testing using collections</li>
+              <li class="company-duties-item">Bug reports writing (Jira, Notion)</li>
+              <li class="company-duties-item">Regression testing (smoke, complete regression, partial regression)</li>
+              <li class="company-duties-item">Testing the application on multiple platforms (Opera, Chrome, Mozilla, Safari, mobile browsers)</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h4 class="company-position">
+              Manual QA Engineer <span class="company-name">Getmancar</span>
+            </h4>
+            <p class="time">
+              February 2024 — February 2025 <span class="color-line">|</span> Ukraine
+              <span class="color-line">|</span> Part-time
+            </p>
+            <ul class="company-list collapsed">
+              <li class="company-duties-item">WEB software testing</li>
+              <li class="company-duties-item">Mobile application testing (Android and iOS)</li>
+              <li class="company-duties-item">Bug reports writing</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h4 class="company-position">
+              Manual QA Engineer <span class="company-name">Forward Group</span>
+            </h4>
+            <p class="time">
+              June 2021 — November 2023 <span class="color-line">|</span> Ukraine
+              <span class="color-line">|</span> Full-time
+            </p>
+            <ul class="company-list collapsed">
+              <li class="company-duties-item">Testing of web software for 3 projects (Cargofy, Fr8lines, and CRM Cargohub)</li>
+              <li class="company-duties-item">API (Postman) testing using collections</li>
+              <li class="company-duties-item">Bug reports writing (Jira, Notion)</li>
+              <li class="company-duties-item">Regression testing (smoke, complete regression, partial regression)</li>
+              <li class="company-duties-item">Testing the application on multiple platforms (Opera, Chrome, Mozilla, Safari, mobile browsers)</li>
+              <li class="company-duties-item">Developing test plans and test cases, bug reports writing (Jira, Notion)</li>
+              <li class="company-duties-item">Cargofy mobile application testing (Android and iOS)</li>
+              <li class="company-duties-item">Testing Database SQL, wrote simple queries</li>
             </ul>
           </div>
         </div>
-        <!-- My education -->
+
         <div class="education-container" id="education">
           <h3 class="education-title">Education</h3>
           <div>
-            <p class="education-name">
-              Chernivtsi Trade and Economics Institute of the State University
-              of Trade and Economics
-            </p>
+            <p class="education-name">Chernivtsi Trade and Economics Institute of the State University of Trade and Economics</p>
             <p class="education-spec">Finance and Financial Management</p>
-            <p class="time">
-              2015 - 2017 <span class="color-line">|</span> Ukraine
-            </p>
+            <p class="time">2015 — 2017 <span class="color-line">|</span> Ukraine</p>
           </div>
         </div>
-        <!-- Cerfitication -->
+
         <div class="certification-container" id="certification">
-          <h3 class="certification-title">Cerfitication</h3>
-          <!-- Cert 1 -->
+          <h3 class="certification-title">Certification</h3>
           <div>
-            <h4 class="certification-name">
-              Certificate of completing the "Fundamentals of Software Testing"
-            </h4>
-            <p class="certification-spec">
-              Fundamentals of Software Testing
-              <span class="company-name">QATestLab</span>
-            </p>
-            <p class="time">
-              January 2020 - March 2020
-              <span class="color-line">|</span> Ukraine
-            </p>
+            <h4 class="certification-name">Certificate of completing the "Fundamentals of Software Testing"</h4>
+            <p class="certification-spec">Fundamentals of Software Testing — <span class="company-name">QATestLab</span></p>
+            <p class="time">January 2020 — March 2020 <span class="color-line">|</span> Ukraine</p>
           </div>
-          <!-- Cert 2 -->
           <div>
             <h4 class="certification-name">API Testing</h4>
-            <p class="certification-spec">
-              Including Fiddler, Swagger, Postman, JMeter + xml, JSON
-              <span class="company-name"> Jungle Course </span>
-            </p>
-            <p class="time">
-              November 2023 - December 2023
-              <span class="color-line">|</span> Ukraine
-            </p>
+            <p class="certification-spec">Including Fiddler, Swagger, Postman, JMeter + XML, JSON — <span class="company-name">Jungle Course</span></p>
+            <p class="time">November 2023 — December 2023 <span class="color-line">|</span> Ukraine</p>
           </div>
-          <!-- Cert 3 -->
           <div>
             <h4 class="certification-name">Database Testing</h4>
-            <p class="certification-spec">
-              SQL, NoSQL, CRUD, ACID, Queries, Functions, Triggers, Test Cases
-              <span class="company-name">Jungle Course</span>
-            </p>
-            <p class="time">
-              January 2024 - February 2024
-              <span class="color-line">|</span> Ukraine
-            </p>
+            <p class="certification-spec">SQL, NoSQL, CRUD, ACID, Queries, Functions, Triggers, Test Cases — <span class="company-name">Jungle Course</span></p>
+            <p class="time">January 2024 — February 2024 <span class="color-line">|</span> Ukraine</p>
           </div>
         </div>
+
       </div>
-      <!-- Sidebar -->
+
       <aside class="sidebar">
         <div class="sidebar-content">
-          <img
-            src="img/nrbKmUDv.jpg"
-            alt="Roman Rusnak"
-            class="profile-photo"
-          />
-          <!-- Видалено блок контактів звідси -->
-          <!-- Tech Skills -->
+          <div class="profile-ring">
+            <img src="img/photo_2025-12-20_17-26-26.jpg" alt="Roman Rusnak" class="profile-photo" />
+          </div>
+
           <div class="skills-container">
             <h3 class="skills-title">Tech Skills</h3>
             <ul class="skills-list">
               <li class="skills-list-item">HTML/CSS</li>
-              <li class="skills-list-item">REST</li>
               <li class="skills-list-item">REST API</li>
               <li class="skills-list-item">Figma</li>
               <li class="skills-list-item">SQL</li>
@@ -555,11 +245,11 @@
               <li class="skills-list-item">Fiddler</li>
               <li class="skills-list-item">Swagger</li>
               <li class="skills-list-item">JMeter</li>
-              <li class="skills-list-item">Charles proxy</li>
+              <li class="skills-list-item">Charles Proxy</li>
               <li class="skills-list-item">Android Studio</li>
             </ul>
           </div>
-          <!-- Soft Skills -->
+
           <div class="skills-container">
             <h3 class="skills-title">Soft Skills</h3>
             <ul class="skills-list">
@@ -572,15 +262,15 @@
               <li class="skills-list-item">Agile</li>
             </ul>
           </div>
-          <!-- Leanguage -->
+
           <div class="skills-container">
-            <h3 class="skills-title">Leanguage</h3>
+            <h3 class="skills-title">Languages</h3>
             <ul class="skills-list">
-              <li class="skills-list-item">Ukrainian - Native</li>
-              <li class="skills-list-item">English - B1</li>
+              <li class="skills-list-item">Ukrainian — Native</li>
+              <li class="skills-list-item">English — B1</li>
             </ul>
           </div>
-          <!-- Hobbies -->
+
           <div class="soft-container">
             <h3 class="skills-title">Interests</h3>
             <ul class="skills-list">
@@ -595,12 +285,12 @@
       </aside>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="footer-content" id="contacts">
         <span>© 2025 Roman Rusnak</span>
       </div>
     </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
