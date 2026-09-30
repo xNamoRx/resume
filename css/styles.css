@@ -296,6 +296,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .info b { color: var(--text); font-weight: 600; }
+.info + .info { margin-top: 12px; }
 
 /* ===== CONTACT BUTTONS ===== */
 .contact-buttons {
