@@ -1,31 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7b6fff"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
-    </linearGradient>
-    <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#7b6fff"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
-    </linearGradient>
-  </defs>
-  <!-- Dark background -->
-  <rect width="32" height="32" rx="8" fill="#0b0b13"/>
-  <!-- Connection lines -->
-  <line x1="16" y1="16" x2="7" y2="8"  stroke="url(#g)"  stroke-width="1.2" opacity="0.6"/>
-  <line x1="16" y1="16" x2="25" y2="8"  stroke="url(#g2)" stroke-width="1.2" opacity="0.6"/>
-  <line x1="16" y1="16" x2="7" y2="24"  stroke="url(#g2)" stroke-width="1.2" opacity="0.6"/>
-  <line x1="16" y1="16" x2="25" y2="24" stroke="url(#g)"  stroke-width="1.2" opacity="0.6"/>
-  <line x1="16" y1="16" x2="16" y2="6"  stroke="url(#g)"  stroke-width="1.2" opacity="0.5"/>
-  <line x1="16" y1="16" x2="16" y2="26" stroke="url(#g)"  stroke-width="1.2" opacity="0.5"/>
-  <!-- Outer nodes -->
-  <circle cx="7"  cy="8"  r="2" fill="url(#g)"  opacity="0.75"/>
-  <circle cx="25" cy="8"  r="2" fill="url(#g2)" opacity="0.75"/>
-  <circle cx="7"  cy="24" r="2" fill="url(#g2)" opacity="0.75"/>
-  <circle cx="25" cy="24" r="2" fill="url(#g)"  opacity="0.75"/>
-  <circle cx="16" cy="6"  r="1.5" fill="url(#g)" opacity="0.6"/>
-  <circle cx="16" cy="26" r="1.5" fill="url(#g)" opacity="0.6"/>
-  <!-- Center node (bright) -->
-  <circle cx="16" cy="16" r="4" fill="url(#g)"/>
-  <circle cx="16" cy="16" r="2" fill="white" opacity="0.9"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#171612"/>
+  <path transform="translate(4.81 51.00) scale(0.02639 -0.02639)" fill="#f3f0e8" d="M133.3455810546875 0V1440H864.7000732421875Q1384.350341796875 1440 1384.350341796875 1008.3372802734375Q1384.350341796875 576.818603515625 814.5394287109375 576.818603515625H494.1280517578125V0ZM1011.3580322265625 0 584.555419921875 673.979248046875H981.9140625L1415.790771484375 0ZM494.1280517578125 853.724365234375H837.9757080078125Q928.7265671355815 853.724365234375 977.6842674545095 893.3835486209754Q1026.6419677734375 933.0427320075758 1026.6419677734375 1007.6953125Q1026.6419677734375 1082.7383834969285 976.0823974609375 1122.9163108890893Q925.5228271484375 1163.09423828125 830.901611328125 1163.09423828125H494.1280517578125Z"/>
+  <rect x="44.67" y="40.00" width="11" height="11" fill="#d23f17"/>
 </svg>

@@ -1,315 +1,237 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
     <title>Roman Rusnak — Manual QA Engineer | AI-Assisted Testing</title>
     <meta
       name="description"
       content="Roman Rusnak — Manual QA Engineer with 5+ years of experience in web and mobile testing, API testing (Postman), SQL and AI-assisted QA."
     />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#171612" />
+    <link rel="icon" href="img/favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="img/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="icon" href="img/favicon.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="page">
-    <div class="gradient-bg">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="gradients-container">
-        <div class="g1"></div>
-        <div class="g2"></div>
-        <div class="g3"></div>
-        <div class="g4"></div>
-        <div class="g5"></div>
-        <div class="interactive"></div>
-      </div>
-    </div>
-
-    <header class="header">
-      <div class="header-content">
-        <nav class="header-nav">
-          <a href="#about" class="header-link">About</a>
-          <a href="#projects" class="header-link">Projects</a>
-          <a href="#work" class="header-link">Work Experience</a>
-          <a href="#education" class="header-link">Education</a>
-          <a href="#certification" class="header-link">Certification</a>
+  <body>
+    <header class="header" id="header">
+      <div class="container header-inner">
+        <a href="#top" class="logo">Roman<b>.</b>QA</a>
+        <nav class="header-nav" aria-label="Sections">
+          <a href="#projects">Projects</a>
+          <a href="#work">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certification">Certification</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
       </div>
     </header>
 
-    <div class="wrapper">
-      <div class="main-content">
-
-        <div class="my-info" id="about">
-          <h2 class="position">Manual QA Engineer</h2>
-          <h1 class="name">Roman Rusnak</h1>
-          <div class="contact-buttons">
-            <a class="button" href="https://github.com/xNamoRx" target="_blank">GitHub</a>
-            <button class="button" id="send-mail-button">Send Mail</button>
-            <a class="button" href="https://www.linkedin.com/in/xnamorx/" target="_blank">LinkedIn</a>
-            <a class="button" href="https://t.me/xNamoRx" target="_blank">Telegram</a>
-          </div>
-          <p class="info">
-            <b>Manual QA Engineer with 5+ years of experience</b> in web and
-            mobile application testing across a wide range of domains:
-            restaurant automation, EdTech, HealthTech, tipping and payments,
-            time tracking, voice assistants for hospitality, logistics CRM and
-            carsharing. Strong understanding of software testing types, levels,
-            and test design techniques. Skilled in functional and UI/UX testing
-            of websites and mobile apps on Android and iOS platforms.
-            Experienced in API testing using Postman and validating data via SQL
-            queries in tools like DataGrip. Comfortable working in dynamic
-            environments with multiple projects. Proficient with macOS,
-            Windows, Android, and iOS. Familiar with tools such as DevTools,
-            Swagger, Fiddler, Jira, and Mantis.
+    <main class="container" id="top">
+      <section class="intro" id="about">
+        <div class="intro-text">
+          <p class="kicker">Manual QA Engineer · AI-assisted testing</p>
+          <h1>Roman Rusnak</h1>
+          <p class="lead">
+            <b>Manual QA Engineer with 5+ years of experience</b> in web and mobile application testing across a wide
+            range of domains: restaurant automation, EdTech, HealthTech, tipping and payments, time tracking, voice
+            assistants for hospitality, logistics and carsharing.
           </p>
-          <p class="info">
-            <b>AI-assisted QA:</b> I use AI in my daily testing workflow —
-            generating test cases and edge cases from requirements, finding gaps
-            in specs, preparing test data, and drafting bug reports and test
-            documentation. It helps me cover more scenarios in less time, while
-            final quality decisions stay with me.
-          </p>
+          <ul class="contacts">
+            <li><a class="btn btn-primary" href="mailto:rrusnak09@gmail.com">rrusnak09@gmail.com</a></li>
+            <li><a class="btn" href="https://www.linkedin.com/in/xnamorx/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a class="btn" href="https://t.me/xNamoRx" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a class="btn" href="https://github.com/xNamoRx" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
         </div>
+        <img class="photo" src="img/photo_2025-12-20_17-26-26.jpg" alt="Roman Rusnak" width="864" height="1184" />
+      </section>
 
-        <div class="projects" id="projects">
-          <h3 class="project-title">Projects</h3>
-          <ol class="projects-list">
-            <li class="projects-item">
-              <a class="project-link" href="https://appricotsoft.com/" target="_blank">Appricotsoft</a>
-              <span class="name-project">[ Software development group ]</span>
-              <ul class="subprojects-list">
-                <li class="projects-item">
-                  <a class="project-link" href="https://myrest.io/" target="_blank">MyRest</a>
-                  <span class="name-project">[ Restaurant automation platform ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://questy.org.pl/" target="_blank">Questy</a>
-                  <span class="name-project">[ Educational platform ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://app.samaypl.com/" target="_blank">Samay</a>
-                  <span class="name-project">[ Time tracking ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://pandasmile.app/" target="_blank">PandaSmile</a>
-                  <span class="name-project">[ Dental clinic software ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://tiptip.com.pl/" target="_blank">TipTip</a>
-                  <span class="name-project">[ Tipping platform ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://www.butleriq.ai/" target="_blank">ButtlerIQ</a>
-                  <span class="name-project">[ Voice assistant for hotels ]</span>
-                </li>
+      <div class="layout">
+        <div class="main-col">
+          <section class="block" aria-labelledby="summary-title">
+            <h2 id="summary-title">Summary</h2>
+            <p>
+              Strong understanding of software testing types, levels and test design techniques. Skilled in functional
+              and UI/UX testing of websites and mobile apps on Android and iOS. Experienced in API testing with Postman
+              and validating data via SQL queries in DataGrip. Comfortable working in dynamic environments with multiple
+              projects. Proficient with macOS, Windows, Android and iOS. Familiar with DevTools, Swagger, Fiddler, Jira
+              and Mantis.
+            </p>
+            <p class="note">
+              <b>AI-assisted QA.</b> I use AI in my daily testing workflow: generating test cases and edge cases from
+              requirements, finding gaps in specs, preparing test data, and drafting bug reports and test documentation.
+              It helps me cover more scenarios in less time, while final quality decisions stay with me.
+            </p>
+          </section>
+
+          <section class="block" id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projects</h2>
+            <div class="project-group">
+              <h3><a href="https://appricotsoft.com/" target="_blank" rel="noopener">Appricotsoft</a> <span>Software development group</span></h3>
+              <ul class="project-list">
+                <li><a href="https://myrest.io/" target="_blank" rel="noopener">MyRest</a><span>Restaurant automation platform</span></li>
+                <li><a href="https://questy.org.pl/" target="_blank" rel="noopener">Questy</a><span>Educational platform</span></li>
+                <li><a href="https://app.samaypl.com/" target="_blank" rel="noopener">Samay</a><span>Time tracking</span></li>
+                <li><a href="https://pandasmile.app/" target="_blank" rel="noopener">PandaSmile</a><span>Dental clinic software</span></li>
+                <li><a href="https://tiptip.com.pl/" target="_blank" rel="noopener">TipTip</a><span>Tipping platform</span></li>
+                <li><a href="https://www.butleriq.ai/" target="_blank" rel="noopener">ButlerIQ</a><span>Voice assistant for hotels</span></li>
               </ul>
-            </li>
-            <li class="projects-item">
-              <a class="project-link" href="https://forward.group/" target="_blank">Forward Group</a>
-              <span class="name-project">[ CRM System ]</span>
-              <ul class="subprojects-list">
-                <li class="projects-item">
-                  <a class="project-link" href="https://cargofy.com/" target="_blank">Cargofy</a>
-                  <span class="name-project">[ Carrier cabinet ]</span>
-                </li>
-                <li class="projects-item">
-                  <a class="project-link" href="https://fr8lines.com/" target="_blank">Fr8lines</a>
-                  <span class="name-project">[ Shipper cabinet ]</span>
-                </li>
+            </div>
+            <div class="project-group">
+              <h3><a href="https://cargofy.com/" target="_blank" rel="noopener">Cargofy</a> <span>Logistics platform</span></h3>
+              <ul class="project-list">
+                <li><a href="https://cargofy.com/" target="_blank" rel="noopener">Cargofy</a><span>Carrier &amp; shipper cabinets, CRM and mobile app (formerly Cargofy, Fr8lines and CargoHub CRM)</span></li>
               </ul>
-            </li>
-            <li class="projects-item">
-              <a class="project-link" href="https://getmancar.com.ua/" target="_blank">Getmancar</a>
-              <span class="name-project">[ Carsharing service ]</span>
-            </li>
-          </ol>
+            </div>
+            <div class="project-group">
+              <h3><a href="https://getmancar.com.ua/" target="_blank" rel="noopener">Getmancar</a> <span>Carsharing service</span></h3>
+            </div>
+          </section>
+
+          <section class="block" id="work" aria-labelledby="work-title">
+            <h2 id="work-title">Work experience</h2>
+
+            <details class="job" open>
+              <summary>
+                <span class="job-title">Manual QA Engineer <b>Appricotsoft</b></span>
+                <span class="job-meta">Feb 2025 — present · Poland · Full-time</span>
+              </summary>
+              <ul>
+                <li>Manual testing of web and mobile applications for compliance with requirements, design and business logic across MyRest, Questy, Samay, PandaSmile, TipTip and ButlerIQ</li>
+                <li>API testing in Postman: responses, error handling, authentication</li>
+                <li>Working with databases (SQL) to verify backend data consistency and integrity</li>
+                <li>Contributing to multiple projects at once, including the company's internal product MyRest</li>
+                <li>Creating test cases and checklists, documenting bugs in Jira</li>
+                <li>Close collaboration with developers and designers to ensure product quality</li>
+                <li>Daily use of AI tools to generate test cases and edge cases, review requirements for gaps, prepare test data and draft bug reports and documentation</li>
+              </ul>
+            </details>
+
+            <details class="job">
+              <summary>
+                <span class="job-title">Manual QA Engineer <b>Forward Group</b></span>
+                <span class="job-meta">May 2024 — Feb 2025 · Ukraine · Part-time</span>
+              </summary>
+              <ul>
+                <li>Testing of web software for 3 projects (Cargofy, Fr8lines and CargoHub CRM)</li>
+                <li>API testing in Postman using collections</li>
+                <li>Writing bug reports (Jira, Notion)</li>
+                <li>Regression testing: smoke, full and partial regression</li>
+                <li>Cross-browser testing: Opera, Chrome, Firefox, Safari, mobile browsers</li>
+              </ul>
+            </details>
+
+            <details class="job">
+              <summary>
+                <span class="job-title">Manual QA Engineer <b>Getmancar</b></span>
+                <span class="job-meta">Feb 2024 — Feb 2025 · Ukraine · Part-time</span>
+              </summary>
+              <ul>
+                <li>Web software testing</li>
+                <li>Mobile application testing (Android and iOS)</li>
+                <li>Writing bug reports</li>
+              </ul>
+            </details>
+
+            <details class="job">
+              <summary>
+                <span class="job-title">Manual QA Engineer <b>Forward Group</b></span>
+                <span class="job-meta">Jun 2021 — Nov 2023 · Ukraine · Full-time</span>
+              </summary>
+              <ul>
+                <li>Testing of web software for 3 projects (Cargofy, Fr8lines and CargoHub CRM)</li>
+                <li>API testing in Postman using collections</li>
+                <li>Regression testing: smoke, full and partial regression</li>
+                <li>Cross-browser testing: Opera, Chrome, Firefox, Safari, mobile browsers</li>
+                <li>Developing test plans and test cases, writing bug reports (Jira, Notion)</li>
+                <li>Cargofy mobile application testing (Android and iOS)</li>
+                <li>Database testing with SQL, writing simple queries</li>
+              </ul>
+            </details>
+          </section>
+
+          <section class="block" id="education" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <div class="entry">
+              <h3>Finance and Financial Management</h3>
+              <p>Chernivtsi Trade and Economics Institute of the State University of Trade and Economics</p>
+              <p class="meta">2015 — 2017 · Ukraine</p>
+            </div>
+          </section>
+
+          <section class="block" id="certification" aria-labelledby="cert-title">
+            <h2 id="cert-title">Certification</h2>
+            <div class="entry">
+              <h3>Fundamentals of Software Testing</h3>
+              <p>Certificate of completion · <b>QATestLab</b></p>
+              <p class="meta">Jan 2020 — Mar 2020 · Ukraine</p>
+            </div>
+            <div class="entry">
+              <h3>API Testing</h3>
+              <p>Fiddler, Swagger, Postman, JMeter, XML, JSON · <b>Jungle Course</b></p>
+              <p class="meta">Nov 2023 — Dec 2023 · Ukraine</p>
+            </div>
+            <div class="entry">
+              <h3>Database Testing</h3>
+              <p>SQL, NoSQL, CRUD, ACID, queries, functions, triggers, test cases · <b>Jungle Course</b></p>
+              <p class="meta">Jan 2024 — Feb 2024 · Ukraine</p>
+            </div>
+          </section>
         </div>
 
-        <div class="work" id="work">
-          <h3 class="work-experience">Work Experience</h3>
-
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Appricotsoft</span>
-            </h4>
-            <p class="time">
-              February 2025 — present <span class="color-line">|</span> Poland
-              <span class="color-line">|</span> Full-time
-            </p>
-            <ul class="company-list">
-              <li class="company-duties-item">Perform manual testing of web and mobile applications to ensure compliance with requirements, design, and business logic across projects: MyRest, Questy, Samay, PandaSmile, TipTip, ButtlerIQ</li>
-              <li class="company-duties-item">Use Postman for API testing (validating responses, error handling, authentication, etc.)</li>
-              <li class="company-duties-item">Work with databases (SQL) to verify backend data consistency and integrity</li>
-              <li class="company-duties-item">Contribute to multiple projects simultaneously, including the company's internal product — MyRest</li>
-              <li class="company-duties-item">Create test cases, checklists, and document bugs in tracking systems (e.g., Jira)</li>
-              <li class="company-duties-item">Collaborate closely with developers and designers to ensure product quality</li>
-              <li class="company-duties-item">Use AI tools daily to generate test cases and edge cases, review requirements for gaps, prepare test data, and draft bug reports and documentation</li>
+        <aside class="side-col">
+          <section class="side-block">
+            <h2>Tech skills</h2>
+            <ul class="chips">
+              <li>AI-assisted testing</li><li>Prompt engineering</li><li>REST API</li><li>Postman</li><li>Swagger</li>
+              <li>SQL</li><li>DataGrip</li><li>DevTools</li><li>Fiddler</li><li>Charles Proxy</li><li>JMeter</li>
+              <li>Android Studio</li><li>HTML/CSS</li><li>Figma</li><li>Jira</li><li>Confluence</li><li>Slack</li>
             </ul>
-          </div>
-
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Forward Group</span>
-            </h4>
-            <p class="time">
-              May 2024 — February 2025 <span class="color-line">|</span> Ukraine
-              <span class="color-line">|</span> Part-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">Testing of web software for 3 projects (Cargofy, Fr8lines, and CRM Cargohub)</li>
-              <li class="company-duties-item">API (Postman) testing using collections</li>
-              <li class="company-duties-item">Bug reports writing (Jira, Notion)</li>
-              <li class="company-duties-item">Regression testing (smoke, complete regression, partial regression)</li>
-              <li class="company-duties-item">Testing the application on multiple platforms (Opera, Chrome, Mozilla, Safari, mobile browsers)</li>
+          </section>
+          <section class="side-block">
+            <h2>Soft skills</h2>
+            <ul class="chips">
+              <li>Attention to detail</li><li>Teamwork</li><li>Adaptability</li><li>Willingness to learn</li>
+              <li>Stress resistance</li><li>Scrum</li><li>Agile</li>
             </ul>
-          </div>
-
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Getmancar</span>
-            </h4>
-            <p class="time">
-              February 2024 — February 2025 <span class="color-line">|</span> Ukraine
-              <span class="color-line">|</span> Part-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">WEB software testing</li>
-              <li class="company-duties-item">Mobile application testing (Android and iOS)</li>
-              <li class="company-duties-item">Bug reports writing</li>
+          </section>
+          <section class="side-block">
+            <h2>Languages</h2>
+            <ul class="plain">
+              <li><b>Ukrainian</b><span>Native</span></li>
+              <li><b>English</b><span>B1</span></li>
             </ul>
-          </div>
-
-          <div class="company">
-            <h4 class="company-position">
-              Manual QA Engineer <span class="company-name">Forward Group</span>
-            </h4>
-            <p class="time">
-              June 2021 — November 2023 <span class="color-line">|</span> Ukraine
-              <span class="color-line">|</span> Full-time
-            </p>
-            <ul class="company-list collapsed">
-              <li class="company-duties-item">Testing of web software for 3 projects (Cargofy, Fr8lines, and CRM Cargohub)</li>
-              <li class="company-duties-item">API (Postman) testing using collections</li>
-              <li class="company-duties-item">Bug reports writing (Jira, Notion)</li>
-              <li class="company-duties-item">Regression testing (smoke, complete regression, partial regression)</li>
-              <li class="company-duties-item">Testing the application on multiple platforms (Opera, Chrome, Mozilla, Safari, mobile browsers)</li>
-              <li class="company-duties-item">Developing test plans and test cases, bug reports writing (Jira, Notion)</li>
-              <li class="company-duties-item">Cargofy mobile application testing (Android and iOS)</li>
-              <li class="company-duties-item">Testing Database SQL, wrote simple queries</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="education-container" id="education">
-          <h3 class="education-title">Education</h3>
-          <div>
-            <p class="education-name">Chernivtsi Trade and Economics Institute of the State University of Trade and Economics</p>
-            <p class="education-spec">Finance and Financial Management</p>
-            <p class="time">2015 — 2017 <span class="color-line">|</span> Ukraine</p>
-          </div>
-        </div>
-
-        <div class="certification-container" id="certification">
-          <h3 class="certification-title">Certification</h3>
-          <div>
-            <h4 class="certification-name">Certificate of completing the "Fundamentals of Software Testing"</h4>
-            <p class="certification-spec">Fundamentals of Software Testing — <span class="company-name">QATestLab</span></p>
-            <p class="time">January 2020 — March 2020 <span class="color-line">|</span> Ukraine</p>
-          </div>
-          <div>
-            <h4 class="certification-name">API Testing</h4>
-            <p class="certification-spec">Including Fiddler, Swagger, Postman, JMeter + XML, JSON — <span class="company-name">Jungle Course</span></p>
-            <p class="time">November 2023 — December 2023 <span class="color-line">|</span> Ukraine</p>
-          </div>
-          <div>
-            <h4 class="certification-name">Database Testing</h4>
-            <p class="certification-spec">SQL, NoSQL, CRUD, ACID, Queries, Functions, Triggers, Test Cases — <span class="company-name">Jungle Course</span></p>
-            <p class="time">January 2024 — February 2024 <span class="color-line">|</span> Ukraine</p>
-          </div>
-        </div>
-
+          </section>
+          <section class="side-block">
+            <h2>Interests</h2>
+            <p class="interests">Technologies · Video games · Camping · Self-development · AI</p>
+          </section>
+        </aside>
       </div>
-
-      <aside class="sidebar">
-        <div class="sidebar-content">
-          <div class="profile-ring">
-            <img src="img/photo_2025-12-20_17-26-26.jpg" alt="Roman Rusnak" class="profile-photo" />
-          </div>
-
-          <div class="skills-container">
-            <h3 class="skills-title">Tech Skills</h3>
-            <ul class="skills-list">
-              <li class="skills-list-item">AI-Assisted Testing</li>
-              <li class="skills-list-item">Prompt Engineering</li>
-              <li class="skills-list-item">HTML/CSS</li>
-              <li class="skills-list-item">REST API</li>
-              <li class="skills-list-item">Figma</li>
-              <li class="skills-list-item">SQL</li>
-              <li class="skills-list-item">Postman</li>
-              <li class="skills-list-item">DataGrip</li>
-              <li class="skills-list-item">Jira</li>
-              <li class="skills-list-item">Slack</li>
-              <li class="skills-list-item">Confluence</li>
-              <li class="skills-list-item">Fiddler</li>
-              <li class="skills-list-item">Swagger</li>
-              <li class="skills-list-item">JMeter</li>
-              <li class="skills-list-item">Charles Proxy</li>
-              <li class="skills-list-item">Android Studio</li>
-            </ul>
-          </div>
-
-          <div class="skills-container">
-            <h3 class="skills-title">Soft Skills</h3>
-            <ul class="skills-list">
-              <li class="skills-list-item">Attention to detail</li>
-              <li class="skills-list-item">Teamwork</li>
-              <li class="skills-list-item">Adaptability</li>
-              <li class="skills-list-item">Willingness to learn</li>
-              <li class="skills-list-item">Stress resistance</li>
-              <li class="skills-list-item">Scrum</li>
-              <li class="skills-list-item">Agile</li>
-            </ul>
-          </div>
-
-          <div class="skills-container">
-            <h3 class="skills-title">Languages</h3>
-            <ul class="skills-list">
-              <li class="skills-list-item">Ukrainian — Native</li>
-              <li class="skills-list-item">English — B1</li>
-            </ul>
-          </div>
-
-          <div class="soft-container">
-            <h3 class="skills-title">Interests</h3>
-            <ul class="skills-list">
-              <li class="skills-list-item">Technologies</li>
-              <li class="skills-list-item">Video Games</li>
-              <li class="skills-list-item">Camping</li>
-              <li class="skills-list-item">Self-development</li>
-              <li class="skills-list-item">AI</li>
-            </ul>
-          </div>
-        </div>
-      </aside>
-    </div>
+    </main>
 
     <footer class="footer">
-      <div class="footer-content" id="contacts">
+      <div class="container footer-inner">
         <span>© 2026 Roman Rusnak</span>
+        <button class="print-btn" type="button" id="print-btn">Print / save as PDF</button>
       </div>
     </footer>
 
