@@ -1,3 +1,6 @@
+// Current year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // Theme toggle (initial theme is set inline in <head> to avoid a flash)
 document.getElementById("theme-toggle").addEventListener("click", () => {
   const t = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
